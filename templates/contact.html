@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Contact Us | K&M Energy Group Ltd{% endblock %}
+{% block content %}
+<section class="page-hero"><div class="container"><div class="eyebrow"><span class="eyebrow-line"></span> GET IN TOUCH</div><h1>Let's discuss<br><em>what you need.</em></h1><p>Contact our team for service enquiries, supply requests and project discussions.</p></div></section>
+<section class="section-pad contact-section"><div class="container contact-layout">
+  <aside class="contact-info reveal"><div class="eyebrow"><span class="eyebrow-line"></span> CONTACT DETAILS</div><h2>We're ready<br>to <em>help.</em></h2><p>Share a few details and we'll get back to you. You can also reach us directly using the details below.</p>
+    <a class="contact-method" href="tel:+211922244959"><span>☎</span><div><small>CALL OUR TEAM</small><strong>+211 922 244 959</strong></div><b>↗</b></a>
+    <a class="contact-method" href="tel:+211924265999"><span>☎</span><div><small>ALTERNATIVE NUMBER</small><strong>+211 924 265 999</strong></div><b>↗</b></a>
+    <a class="contact-method" href="mailto:kmenergyss@gmail.com"><span>✉</span><div><small>EMAIL US</small><strong>kmenergyss@gmail.com</strong></div><b>↗</b></a>
+    <div class="contact-method"><span>⌖</span><div><small>VISIT US</small><strong>Juba Town, opposite Gabat Primary School, South Sudan</strong></div></div>
+    <a class="btn btn-lime contact-wa" href="https://wa.me/211922244959" target="_blank" rel="noopener">Message us on WhatsApp ↗</a>
+  </aside>
+  <div class="contact-form-card reveal"><div class="form-heading"><h2>Send an enquiry</h2><p>Fields marked * are required.</p></div>
+    <form method="post" id="contactForm" novalidate>{% csrf_token %}
+      <div class="form-row"><label>Full name *<input name="name" type="text" autocomplete="name" placeholder="Your full name" required maxlength="120"></label><label>Email address *<input name="email" type="email" autocomplete="email" placeholder="you@example.com" required></label></div>
+      <div class="form-row"><label>Phone number<input name="phone" type="tel" autocomplete="tel" placeholder="+211 ..."></label><label>Service of interest<select name="service"><option value="">Choose a service</option>{% for service in services %}<option value="{{ service }}">{{ service }}</option>{% endfor %}</select></label></div>
+      <label>Subject *<input name="subject" type="text" placeholder="What can we help you with?" required maxlength="180"></label>
+      <label>Your message *<textarea name="message" rows="5" placeholder="Tell us about your request, quantity, location or project..." required></textarea></label>
+      <div class="form-bottom"><span>🔒 Your details are used to respond to your enquiry.</span><button class="btn btn-green" type="submit">Send message <span>↗</span></button></div>
+      <p class="form-status" id="formStatus" aria-live="polite"></p>
+    </form>
+  </div>
+</div></section>
+{% endblock %}

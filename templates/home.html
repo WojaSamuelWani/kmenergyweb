@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}K&M Energy Group Ltd | Energy, Logistics & Supply Solutions{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="hero-shade"></div><div class="container hero-content">
+    <div class="eyebrow"><span class="eyebrow-line"></span> YOUR TRUSTED BUSINESS PARTNER</div>
+    <h1>Powering progress.<br><em>Delivering solutions.</em></h1>
+    <p>From dependable fuel delivery to logistics, construction and general supplies, K&M Energy Group Ltd helps keep your operations moving.</p>
+    <div class="hero-actions"><a class="btn btn-lime" href="{% url 'services' %}">Explore our services <span>↗</span></a><a class="btn btn-outline-light" href="{% url 'contact' %}">Talk to our team</a></div>
+    <div class="hero-trust"><span class="trust-icon">✓</span><span>Professional service</span><span class="trust-dot">•</span><span>Safety-minded delivery</span><span class="trust-dot">•</span><span>Customer focused</span></div>
+  </div>
+  <div class="hero-stamp"><span>KM</span><small>ENERGY<br>GROUP LTD</small></div>
+</section>
+<section class="intro section-pad"><div class="container intro-grid">
+  <div class="intro-visual reveal"><div class="visual-panel"><span class="visual-label">K&M ENERGY GROUP LTD</span><div class="visual-big">Reliable<br><b>by design.</b></div><div class="visual-bottom"><span>JUBA, SOUTH SUDAN</span><span>EST. FOR SERVICE</span></div></div><div class="floating-note"><strong>One partner.</strong><br>Many solutions.</div></div>
+  <div class="intro-copy reveal"><div class="eyebrow dark"><span class="eyebrow-line"></span> WHO WE ARE</div><h2>Solutions that keep<br><em>business moving.</em></h2><p>K&M Energy Group Ltd is a registered South Sudanese company providing door-to-door fuel delivery and a broad range of services across energy, oil and gas, logistics, construction and general supplies.</p><p>We aim to make sourcing and delivery simpler, safer and more dependable for businesses, project sites, organisations and communities.</p><a class="text-link" href="{% url 'about' %}">Get to know us <span>→</span></a></div>
+</div></section>
+<section class="services-section section-pad"><div class="container"><div class="section-heading reveal"><div><div class="eyebrow"><span class="eyebrow-line"></span> WHAT WE DO</div><h2>Services built around<br><em>your needs.</em></h2></div><p>Practical solutions. Responsive service. A partner focused on helping your work move forward.</p></div>
+<div class="service-grid">
+  <article class="service-card reveal"><div class="service-icon">⛽</div><span class="card-number">01</span><h3>Fuel & Energy</h3><p>Door-to-door fuel delivery, bulk supply, generator refuelling and support for fleets, construction and industrial sites.</p><a href="{% url 'services' %}">Explore service <span>↗</span></a></article>
+  <article class="service-card reveal"><div class="service-icon">⇄</div><span class="card-number">02</span><h3>Oil, Gas & Logistics</h3><p>Oilfield project support, procurement, freight, transportation, haulage and supply-chain solutions.</p><a href="{% url 'services' %}">Explore service <span>↗</span></a></article>
+  <article class="service-card reveal"><div class="service-icon">⌂</div><span class="card-number">03</span><h3>Construction & Materials</h3><p>Construction support, civil works, sand, aggregates, soil and other building materials for projects.</p><a href="{% url 'services' %}">Explore service <span>↗</span></a></article>
+  <article class="service-card reveal"><div class="service-icon">▦</div><span class="card-number">04</span><h3>General Supplies</h3><p>ICT equipment, electrical items, furniture, food commodities, agricultural products and safety equipment.</p><a href="{% url 'services' %}">Explore service <span>↗</span></a></article>
+</div><div class="center-action"><a class="btn btn-green" href="{% url 'services' %}">View all services <span>↗</span></a></div></div></section>
+<section class="values-section section-pad"><div class="container values-grid"><div class="values-copy reveal"><div class="eyebrow"><span class="eyebrow-line"></span> OUR COMMITMENT</div><h2>Good service is in<br><em>the details.</em></h2><p>We believe in doing business with honesty, professionalism and integrity. Our goal is to deliver quality products and services with care, efficiency and clear communication.</p><a class="btn btn-lime" href="{% url 'about' %}">Our mission & values <span>↗</span></a></div><div class="value-list reveal"><div class="value-item"><span>01</span><div><h3>Honesty</h3><p>Clear communication and straightforward business relationships.</p></div><b>↗</b></div><div class="value-item"><span>02</span><div><h3>Professionalism</h3><p>Respectful, responsive service with attention to quality.</p></div><b>↗</b></div><div class="value-item"><span>03</span><div><h3>Integrity</h3><p>Accountability and care in the way we work with clients.</p></div><b>↗</b></div></div></div></section>
+<section class="cta-band"><div class="container cta-inner"><div><div class="eyebrow"><span class="eyebrow-line"></span> LET'S WORK TOGETHER</div><h2>Have a project or supply need?</h2><p>Tell us what you need and our team will be glad to discuss the next steps.</p></div><a class="btn btn-lime" href="{% url 'contact' %}">Contact K&M <span>↗</span></a></div></section>
+{% endblock %}
